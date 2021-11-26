@@ -1,0 +1,30 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #41b3a3;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+body > #main-body{
+    height: 100%;
+    width: 100%;
+}
+body > #main-body > #introduction{
+    margin: 0 auto;
+    background-color: white;
+    height: 90%;
+    width: 80%;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(37, 150, 190);
+}
+body > #main-body > #introduction > p{
+    font-size: 30px;   
+}
+.btn-large{
+    margin-top: 100px;
+}
