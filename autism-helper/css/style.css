@@ -2,27 +2,45 @@ html{
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: #71A596;
+  background-color: white;
 }
 /*CSS to try to make the site responsive*/
 body{
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
+}
+header{
+  width: 100%;
+  position: absolute;
+  height: 30px;
+  margin: 0;
+}
+header > #warning-header > p{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  padding: 5px;
+}
+main{
+  margin: 0 auto;
+  height: 100%;
 }
 /*For the introduction div*/
-body > #introduction{
+body > main > #introduction{
   margin: auto;
-  height: 70%;
-  width: 70%;
-  background-color: white;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   color: #40676E;
   font-family: 'Outfit', sans-serif;
-  overflow: hidden;
 }
 body > #introduction > #info-footer{
     margin-bottom: 0;
+}
+footer{
+  position: relative;
+  float: bottom;
+}
+footer > p{
+  color: #40676e;
 }

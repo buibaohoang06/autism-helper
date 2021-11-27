@@ -1,35 +1,26 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Bui Bao Hoang">
-    <meta name="description" content="A simple web application built to create a better way to communicate with autistic people. Made with HTML, CSS, Vanilla JS and MaterializeCSS">
-    <!--MaterializeCSS-->
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--MaterializeJS-->
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Autism Helper</title>
-    <!--Main CSS-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/customizable.css">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
-    <!--The main app JS-->
-    <script src="js/app.js"></script>
+  <head id="head">
+    <!--Code will be automatically injected-->
+    <script src="templates/js/app.js"></script>
   </head>
-  <body class="valign-wrapper center-align">
-    <div id="introduction" class="center-align">
-      <h3 class="center-align padding-30px">Welcome to Autism Helper!</h3>
-      <hr style="width: 100px;">
-      <p class="center-align font-size-small padding-20px">A simple web application built to create a better way to communicate with autistic patients</p>
-      <button class="waves-effect waves-light btn-large">Press to continue</button>
-      <div id="info-footer">
-        <p>Created by Bui Bao Hoang</p>
+  <body class="center-align">
+    <!--Introduction Panel-->
+    <header>
+      <div id="warning-header" class="center-align teal lighten-2">
+        <p>Warning! Autism Helper is in its beta stages.</p>
       </div>
-    </div>
+    </header>
+    <main class="valign-wrapper">
+      <div id="introduction">
+        <h3 class="center-align padding-30px">Welcome to Autism Helper!</h3>
+        <hr style="width: 100px;">
+        <p class="center-align font-size-small padding-20px">A simple web application built to create a better way to communicate with autistic patients</p>
+        <button id="continue" class="waves-effect waves-light btn-large">Press to continue</button>
+      </div>
+    </main>
+    <footer>
+      <p>Made by Bui Bao Hoang. Project is open-source and can be found on <a href="https://github.com/buibaohoang06/autism-helper">GitHub</a></p>
+    </footer>
   </body>
 </html>
