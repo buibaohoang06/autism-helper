@@ -67,11 +67,14 @@ footer > p{
 #main > #sub-welcome{
   font-size: 30px;
 }
-#excelent{
-  font-size: 40px;
+#the-actual-app{
+  font-size: 30px;
   margin: auto;
   font-family: 'Outfit', sans-serif;
 }
 #display{
   margin: auto;
+}
+#emergency{
+  margin-top: 30px;
 }

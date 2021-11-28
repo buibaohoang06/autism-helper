@@ -34,17 +34,8 @@ const gettingInfo = `
 </div>
 `
 
-//feeling excelent
+//feeling
 
-const feeling = `
-<div id="main" class="center-align">
-  <p id="welcome"></p>
-  <p id="sub-welcome">How are you feeling?</p>
-  <button onclick="excelent()" class="valign-wrapper btn-flat padding-100px waves-effect waves-grey"><img src="images/star.png" class="center-align margin-auto middle" height="150" width="150"></button>
-  <button class="valign-wrapper btn-flat padding-100px waves-effect waves-grey"><img src="images/smile.png" class="center-align margin-auto middle" height="150" width="150"></button>
-  <button class="valign-wrapper btn-flat padding-100px waves-effect waves-grey"><img src="images/sad.png" class="center-align margin-auto middle" height="150" width="150"></button>
-</div>
-`
 //injecting head code
 document.getElementById('head').innerHTML = header;
 
@@ -66,18 +57,22 @@ function toApp(){
   window.location.replace('app.html');
 }
 
-function loggedIn(){
-  let targetHtml = document.getElementById('main');
-  document.getElementById('display').innerHTML = targetHtml.innerHTML;
-  targetHtml.style.removeProperty("display");
-}
-
 //if user is feeling excelent
-function excelent(){
+function theActualApp(){
   document.getElementById('display').innerHTML = `
-    <div id="excelent">
-      <p class="center-align">Perfect! Glad to hear that!</p>
-      <p>What would you like to do now?</p>
+    <div id="the-actual-app">
+      <p id="welcome" class="center-align"></p>
+      <p class="center-align">What would you like to do now?</p>
+      <div id="button-wrapper" class="center-align">
+        <button class="valign-wrapper padding-50px btn-flat waves-effect waves-grey center-align"><img src="images/healthy.png" class="center-align margin-auto middle" height="100" width="100"></button>
+        <button class="valign-wrapper padding-50px btn-flat waves-effect waves-grey center-align"><img src="images/sleeping.png" class="center-align margin-auto middle" height="100" width="100"></button>
+        <button class="valign-wrapper padding-50px btn-flat waves-effect waves-grey center-align"><img src="images/playtime.png" class="center-align margin-auto middle" height="100" width="100"></button>
+        <button class="valign-wrapper padding-50px btn-flat waves-effect waves-grey center-align"><img src="images/public-toilet.png" class="center-align margin-auto middle" height="100" width="100"></button>
+        <button class="valign-wrapper padding-50px btn-flat waves-effect waves-grey center-align"><img src="images/student.png" class="center-align margin-auto middle" height="100" width="100"></button>
+      </div>
+      <div id="emergency" class="center-align">
+        <button class="btn waves-effect red darken-1">I am having an Emergency</button>
+      </div>
     </div>
   `
 }
@@ -87,5 +82,5 @@ if (localStorage.getItem('username') == undefined && localStorage.getItem('age')
   document.getElementById('display').innerHTML = gettingInfo;
 }
 else{
-  document.getElementById('display').innerHTML = feeling;
+  theActualApp()
 }
