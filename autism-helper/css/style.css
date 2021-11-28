@@ -1,8 +1,10 @@
+/* boilerplate */
 html{
   height: 100%;
   width: 100%;
   margin: 0;
   background-color: white;
+  color: #40676E;
 }
 /*CSS to try to make the site responsive*/
 body{
@@ -10,6 +12,7 @@ body{
   width: 100%;
   margin: 0;
 }
+/* index.html css */
 header{
   width: 100%;
   position: absolute;
@@ -43,4 +46,32 @@ footer{
 }
 footer > p{
   color: #40676e;
+}
+
+/* app.html css */
+
+#getting-info{
+  margin: auto;
+  font-family: 'Outfit', sans-serif;
+}
+#getting-info > p{
+  font-size: 30px;
+}
+
+#main{
+  margin: auto;
+}
+#main > #welcome{
+  font-size: 40px;
+}
+#main > #sub-welcome{
+  font-size: 30px;
+}
+#excelent{
+  font-size: 40px;
+  margin: auto;
+  font-family: 'Outfit', sans-serif;
+}
+#display{
+  margin: auto;
 }
