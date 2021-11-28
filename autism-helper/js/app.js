@@ -47,7 +47,7 @@ const gettingInfo = `
 
 
 //injecting head code
-document.getElementById('head').innerHTML = header;
+document.getElementById('head').innerHTML += header;
 
 //welcome message
 
